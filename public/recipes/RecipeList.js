@@ -8,7 +8,8 @@ class RecipeList extends Component {
         `;
   }
   onRender(element) {
-    const allRecipes = this.props.allRecipes;
+    const allRecipes = this.props.allRecipes; 
+    console.log(allRecipes, 'ALL RECIPES');
     allRecipes.forEach(recipe => {
       const props = { recipe };
       const recipeItem = new RecipeItem(props);
