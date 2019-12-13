@@ -25,8 +25,9 @@ class App extends Component {
     return /*html*/ `
         
             <form id="recipe-form">
-                <input name="name" type="text" placeholder="Recipe Name">
-                <input name="directions" type="text" placeholder="Recipe Directions">
+                <input name="name" type="text" required placeholder="Recipe Name"><br>
+                <p>Directions:</p>
+                <textarea rows="14" cols="10" wrap="soft" style="width: 400px; height: 300px;"  name="directions" type="text" required placeholder="Recipe Directions"> </textarea>
                 <button id="form-submit">Submit Recipe</button>
 
             </form>

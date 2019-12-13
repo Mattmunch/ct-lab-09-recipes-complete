@@ -19,7 +19,7 @@ class App extends Component {
 
     const allRecipes = await getRecipes();
     
-    recipeList.update({ allRecipes: [allRecipes] });
+    recipeList.update({ allRecipes });
 
    
         
