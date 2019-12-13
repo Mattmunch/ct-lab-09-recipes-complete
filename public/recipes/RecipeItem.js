@@ -1,6 +1,11 @@
 import Component from '../Component.js';
 
 class RecipeItem extends Component {
+  onRender() {
+    const recipe = this.props.recipe;
+
+    console.log(recipe.directions);
+  }
   renderHTML() {
     const recipe = this.props.recipe;
     return `

@@ -25,7 +25,7 @@ export function addRecipe(recipe) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(recipe)
-  }).then(res => console.log(res));
+  });
 }
 
 export function updateRecipe(recipe) {  

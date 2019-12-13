@@ -16,8 +16,8 @@ class App extends Component {
         name: formData.get('name'),
         directions: formData.get('directions')
       };
+      console.log(recipe, 'RECIPE');
       addRecipe(recipe);
-      console.log(recipe, 'FORM DATA');
     });
       
   }
