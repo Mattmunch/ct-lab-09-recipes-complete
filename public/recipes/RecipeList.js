@@ -1,4 +1,4 @@
-import Component from './Component.js';
+import Component from '../Component.js';
 import RecipeItem from './RecipeItem.js';
 
 class RecipeList extends Component {

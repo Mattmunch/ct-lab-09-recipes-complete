@@ -1,4 +1,4 @@
-const URL = '/api';
+const URL = 'https://matts-recipes.herokuapp.com/api/v1';
 
 async function fetchWithError(url, options) {
   const response = await fetch(url, options);
@@ -12,12 +12,12 @@ async function fetchWithError(url, options) {
   }
 }
 
-export function getTodos() {  
+export function getRecipes() {  
   const url = `${URL}/recipes`;
   return fetchWithError(url);
 }
 
-export function addTodo(recipe) {  
+export function addRecipe(recipe) {  
   const url = `${URL}/recipes`;
   return fetchWithError(url, {
     method: 'POST',
@@ -28,7 +28,7 @@ export function addTodo(recipe) {
   });
 }
 
-export function updateTodo(recipe) {  
+export function updateRecipe(recipe) {  
   const url = `${URL}/recipes/${recipe.id}`;
   return fetchWithError(url, {
     method: 'PUT',
@@ -40,7 +40,7 @@ export function updateTodo(recipe) {
     
 }
 
-export function removeTodo(recipeId) {  
+export function removeRecipe(recipeId) {  
   const url = `${URL}/${recipeId}`;
   return fetchWithError(url, {
     method: 'DELETE'

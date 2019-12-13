@@ -8,7 +8,7 @@ class Header extends Component {
                 <h1>Matt's Recipes</h1>
                 <nav>
                     <a href="./">Home</a>
-                    <a href="./recipes.html">Recipes</a>
+                    <a href="/recipes/recipes.html">Recipes</a>
                 </nav>
             </header>
         `;
