@@ -6,8 +6,8 @@ class RecipeItem extends Component {
     return `
         <li id="${recipe._id}">
             <h2>${recipe.name}</h2>
-            <p>${recipe.ingredients}</p>
-            <p>${recipe.instructions}</p>
+            <p>${recipe.ingredients || ''}</p>
+            <p>${recipe.directions || ''}</p>
     </li>
         `;
   }
